@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Asmaul Husna</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .navbar {
+            margin-left: auto;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 0 5px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .main-content h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .main-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-content ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .main-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="asmaul.png" alt="Logo Asmaul Husna">
+        <h1>Media Pembelajaran Asmaul Husna</h1>
+        <div class="navbar">
+            <a href="index.html">Dashboard</a>
+            <a href="materi.html">Materi</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="ppt.html">PPT</a>
+            <a href="pdf.html">PDF</a>
+        </div>
+    </div>
+
+    <h2>Quiz Asmaul Husna</h2>
+    <form id="quiz">
+        <div>
+            <br>
+            <p>1. Apa arti dari Asmaul Husna?</p>
+            <input type="radio" id="q1a" name="q1" value="0">
+            <label for="q1a">Nama-nama Allah yang indah</label><br>
+            <input type="radio" id="q1b" name="q1" value="1">
+            <label for="q1b">Nama-nama Allah yang sempurna</label><br>
+            <input type="radio" id="q1c" name="q1" value="0">
+            <label for="q1c">Nama-nama Allah yang besar</label><br>
+        </div>
+        <div>
+            <br>
+            <p>2. Berapa jumlah Asmaul Husna?</p>
+            <input type="radio" id="q2a" name="q2" value="0">
+            <label for="q2a">100</label><br>
+            <input type="radio" id="q2b" name="q2" value="1">
+            <label for="q2b">99</label><br>
+            <input type="radio" id="q2c" name="q2" value="0">
+            <label for="q2c">66</label><br>
+        </div>
+        <div>
+            <br>
+            <p>3. Apa yang dimaksud dengan al-Bari?</p>
+            <input type="radio" id="q3a" name="q3" value="1">
+            <label for="q3a">Allah yang Maha Pencipta</label><br>
+            <input type="radio" id="q3b" name="q3" value="0">
+            <label for="q3b">Allah yang Maha Mengetahui</label><br>
+            <input type="radio" id="q3c" name="q3" value="0">
+            <label for="q3c">Allah yang Maha Agung</label><br>
+        </div>
+        <div>
+            <br>
+            <p>4. Apa arti dari al-Khaliq?</p>
+            <input type="radio" id="q4a" name="q4" value="0">
+            <label for="q4a">Allah yang Maha Mengetahui</label><br>
+            <input type="radio" id="q4b" name="q4" value="1">
+            <label for="q4b">Allah yang Maha Pencipta</label><br>
+            <input type="radio" id="q4c" name="q4" value="0">
+            <label for="q4c">Allah yang Maha Memberi kehidupan</label><br>
+        </div>
+        <div>
+            <br>
+            <p>5. Apa yang dimaksud dengan al-Hakam?</p>
+            <input type="radio" id="q5a" name="q5" value="0">
+            <label for="q5a">Allah yang Maha Penyayang</label><br>
+            <input type="radio" id="q5b" name="q5" value="1">
+            <label for="q5b">Allah yang Maha Mengadili</label><br>
+            <input type="radio" id="q5c" name="q5" value="0">
+            <label for="q5c">Allah yang Maha Mengetahui</label><br>
+        </div>
+        <div>
+            <br>
+            <p>6. Apa arti dari al-Wadud?</p>
+            <input type="radio" id="q6a" name="q6" value="1">
+            <label for="q6a">Allah yang Maha Penerima kasih sayang</label><br>
+            <input type="radio" id="q6b" name="q6" value="0">
+            <label for="q6b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q6c" name="q6" value="0">
+            <label for="q6c">Allah yang Maha Pencipta</label><br>
+        </div>
+        <div>
+            <br>
+            <p>7. Apa yang dimaksud dengan al-Mu'min?</p>
+            <input type="radio" id="q7a" name="q7" value="0">
+            <label for="q7a">Allah yang Maha Mengetahui</label><br>
+            <input type="radio" id="q7b" name="q7" value="1">
+            <label for="q7b">Allah yang Maha Memberi Keamanan</label><br>
+            <input type="radio" id="q7c" name="q7" value="0">
+            <label for="q7c">Allah yang Maha Pencipta</label><br>
+        </div>
+        <div>
+            <br>
+            <p>8. Apa arti dari al-Qadir?</p>
+            <input type="radio" id="q8a" name="q8" value="1">
+            <label for="q8a">Allah yang Maha Kuasa</label><br>
+            <input type="radio" id="q8b" name="q8" value="0">
+            <label for="q8b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q8c" name="q8" value="0">
+            <label for="q8c">Allah yang Maha Penyayang</label><br>
+        </div>
+        <div>
+            <br>
+            <p>9. Apa yang dimaksud dengan al-Muhyi?</p>
+            <input type="radio" id="q9a" name="q9" value="1">
+            <label for="q9a">Allah yang Maha Menghidupkan</label><br>
+            <input type="radio" id="q9b" name="q9" value="0">
+            <label for="q9b">Allah yang Maha Pencipta</label><br>
+            <input type="radio" id="q9c" name="q9" value="0">
+            <label for="q9c">Allah yang Maha Mengetahui</label><br>
+        </div>
+        <div>
+            <br>
+            <p>10. Apa arti dari al-Muhaimin?</p>
+            <input type="radio" id="q10a" name="q10" value="1">
+            <label for="q10a">Allah yang Maha Memelihara</label><br>
+            <input type="radio" id="q10b" name="q10" value="0">
+            <label for="q10b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q10c" name="q10" value="0">
+            <label for="q10c">Allah yang Maha Penyayang</label><br>
+        </div>
+        <div>
+            <br>
+            <p>11. Apa yang dimaksud dengan al-Hafizh?</p>
+            <input type="radio" id="q11a" name="q11" value="1">
+            <label for="q11a">Allah yang Maha Memelihara</label><br>
+            <input type="radio" id="q11b" name="q11" value="0">
+            <label for="q11b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q11c" name="q11" value="0">
+            <label for="q11c">Allah yang Maha Pencipta</label><br>
+        </div>
+        <div>
+            <br>
+            <p>12. Apa arti dari al-Razzaq?</p>
+            <input type="radio" id="q12a" name="q12" value="1">
+            <label for="q12a">Allah yang Maha Pemberi Rezeki</label><br>
+            <input type="radio" id="q12b" name="q12" value="0">
+            <label for="q12b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q12c" name="q12" value="0">
+            <label for="q12c">Allah yang Maha Pencipta</label><br>
+        </div>
+        <div>
+            <br>
+            <p>13. Apa yang dimaksud dengan al-Karim?</p>
+            <input type="radio" id="q13a" name="q13" value="1">
+            <label for="q13a">Allah yang Maha Pemurah</label><br>
+            <input type="radio" id="q13b" name="q13" value="0">
+            <label for="q13b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q13c" name="q13" value="0">
+            <label for="q13c">Allah yang Maha Melihat</label><br>
+        </div>
+        <div>
+            <br>
+            <p>14. Apa arti dari al-Qawiyyu?</p>
+            <input type="radio" id="q14a" name="q14" value="1">
+            <label for="q14a">Allah yang Maha Kuat</label><br>
+            <input type="radio" id="q14b" name="q14" value="0">
+            <label for="q14b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q14c" name="q14" value="0">
+            <label for="q14c">Allah yang Maha Penyayang</label><br>
+        </div>
+        <div>
+            <br>
+            <p>15. Apa yang dimaksud dengan al-Matin?</p>
+            <input type="radio" id="q15a" name="q15" value="1">
+            <label for="q15a">Allah yang Maha Kokoh</label><br>
+            <input type="radio" id="q15b" name="q15" value="0">
+            <label for="q15b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q15c" name="q15" value="0">
+            <label for="q15c">Allah yang Maha Mengetahui</label><br>
+        </div>
+        <div>
+            <br>
+            <p>16. Apa arti dari al-Wahhab?</p>
+            <input type="radio" id="q16a" name="q16" value="1">
+            <label for="q16a">Allah yang Maha Pemberi</label><br>
+            <input type="radio" id="q16b" name="q16" value="0">
+            <label for="q16b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q16c" name="q16" value="0">
+            <label for="q16c">Allah yang Maha Kuasa</label><br>
+        </div>
+        <div>
+            <br>
+            <p>17. Apa yang dimaksud dengan al-Qahhar?</p>
+            <input type="radio" id="q17a" name="q17" value="1">
+            <label for="q17a">Allah yang Maha Menundukkan</label><br>
+            <input type="radio" id="q17b" name="q17" value="0">
+            <label for="q17b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q17c" name="q17" value="0">
+            <label for="q17c">Allah yang Maha Melindungi</label><br>
+        </div>
+        <div>
+            <br>
+            <p>18. Apa arti dari al-Wadud?</p>
+            <input type="radio" id="q18a" name="q18" value="1">
+            <label for="q18a">Allah yang Maha Penerima kasih sayang</label><br>
+            <input type="radio" id="q18b" name="q18" value="0">
+            <label for="q18b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q18c" name="q18" value="0">
+            <label for="q18c">Allah yang Maha Melihat</label><br>
+        </div>
+        <div>
+            <br>
+            <p>19. Apa yang dimaksud dengan al-Mujib?</p>
+            <input type="radio" id="q19a" name="q19" value="1">
+            <label for="q19a">Allah yang Maha Mengabulkan doa</label><br>
+            <input type="radio" id="q19b" name="q19" value="0">
+            <label for="q19b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q19c" name="q19" value="0">
+            <label for="q19c">Allah yang Maha Pemberi</label><br>
+        </div>
+        <div>
+            <br>
+            <p>20. Apa arti dari al-Hafizh?</p>
+            <input type="radio" id="q20a" name="q20" value="1">
+            <label for="q20a">Allah yang Maha Memelihara</label><br>
+            <input type="radio" id="q20b" name="q20" value="0">
+            <label for="q20b">Allah yang Maha Agung</label><br>
+            <input type="radio" id="q20c" name="q20" value="0">
+            <label for="q20c">Allah yang Maha Menyembuhkan</label><br>
+        </div>
+        <button type="button" onclick="submitQuiz()">Kirim</button>
+    </form>
+    <div id="result" style="display:none;">
+        <h3>Skor Anda:</h3>
+        <p id="score"></p>
+        <h3>Detail Jawaban:</h3>
+        <ul id="details"></ul>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: 'q1b',
+            q2: 'q2b',
+            q3: 'q3a',
+            q4: 'q4b',
+            q5: 'q5b',
+            q6: 'q6a',
+            q7: 'q7b',
+            q8: 'q8a',
+            q9: 'q9a',
+            q10: 'q10a',
+            q11: 'q11a',
+            q12: 'q12a',
+            q13: 'q13a',
+            q14: 'q14a',
+            q15: 'q15a',
+            q16: 'q16a',
+            q17: 'q17a',
+            q18: 'q18a',
+            q19: 'q19a',
+            q20: 'q20a'
+        };
+    
+        function submitQuiz() {
+            const form = document.getElementById('quiz');
+            let score = 0;
+            const details = document.getElementById('details');
+            details.innerHTML = '';
+    
+            for (let i = 1; i <= 20; i++) {
+                const question = 'q' + i;
+                const radios = document.getElementsByName(question);
+                let answeredCorrectly = false;
+    
+                for (const radio of radios) {
+                    if (radio.checked) {
+                        if (radio.id === correctAnswers[question]) {
+                            score += 5; // Setiap jawaban benar bernilai 5
+                            answeredCorrectly = true;
+                        }
+                        const li = document.createElement('li');
+                        li.innerHTML = `<span class="${answeredCorrectly ? 'correct' : 'incorrect'}">Pertanyaan ${i}: ${answeredCorrectly ? 'Benar' : 'Salah'}</span>`;
+                        details.appendChild(li);
+                    }
+                }
+            }
+    
+            const resultText = `Anda mendapatkan ${score} dari 100. ${score >= 75 ? 'Selamat, Anda Lulus!' : 'Maaf, Anda Tidak Lulus.'}`;
+            document.getElementById('score').innerText = resultText;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>    
+</body>
+</html>

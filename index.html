@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran Asmaul Husna</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .navbar {
+            margin-left: auto;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 0 5px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .main-content h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .main-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-content ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .main-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="asmaul.png" alt="Logo" class="logo">
+        <h1>Media Pembelajaran Asmaul Husna</h1>
+        <nav class="navbar">
+            <a href="index.html">Dashboard</a>
+            <a href="materi.html">Materi</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="ppt.html">PPT</a>
+            <a href="pdf.html">PDF</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div id="dashboard" class="content-section active">
+            <h2>Dashboard</h2>
+            <p>Selamat datang di media pembelajaran Asmaul Husna.</p>
+            <h3>Fitur Utama:</h3>
+            <ul>
+                <li><strong>Materi:</strong> Temukan penjelasan lengkap tentang Asmaul Husna.</li>
+                <li><strong>Quiz:</strong> Uji pemahaman Anda tentang Asmaul Husna dengan quiz interaktif.</li>
+                <li><strong>Presentasi (PPT):</strong> Akses presentasi yang menarik tentang Asmaul Husna.</li>
+                <li><strong>PDF:</strong> Unduh materi Asmaul Husna dalam format PDF.</li>
+            </ul>
+            <p>Silakan navigasikan melalui menu di atas untuk memulai.</p>
+        </div>
+    </div>
+</body>
+</html>
